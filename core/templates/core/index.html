@@ -902,20 +902,21 @@
                     <div class="row">
                         <!--  Contact Form  -->
                         <div class="contact-form">
-                            <form action="https://santhemes.com/blackgallery/elizah/html/mailer.php" id="contactForm" method="post" name="contactForm">
+                            <form id="contactForm" method="post" name="contactForm">
+                            {% csrf_token %}
                                 <div class="col-sm-6">
                                     <div class="form-group col-sm-12">
-                                        <input class="form-control" id="Name" name="Name" placeholder="Name :" type="text">
+                                        <input class="form-control" id="name" name="name" placeholder="Name :" type="text">
                                     </div>
                                     <div class="form-group col-sm-12">
-                                        <input class="form-control" id="Email" name="Email" placeholder="Email :" type="text">
+                                        <input class="form-control" id="email" name="email" placeholder="Email :" type="text">
                                     </div>
                                     <div class="form-group col-sm-12">
-                                        <input class="form-control" id="Tel" name="Tel" placeholder="Number :" type="text">
+                                        <input class="form-control" id="phone" name="phone" placeholder="Number :" type="text">
                                     </div>
                                 </div>
                                 <div class="form-group col-sm-6">
-                                    <textarea class="form-control" id="Message" name="Message" placeholder="Message :"></textarea>
+                                    <textarea class="form-control" id="message" name="message" placeholder="Message :"></textarea>
                                 </div>
                                 <input class="submit-button btn btn-chos" name="submit" value="Submit" type="submit">
                             </form>
