@@ -11,6 +11,7 @@
     <meta name="keywords" content="Elizah, Multipage, Business, HTML, Template" />
     <meta name="author" content="Elizah">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -34,11 +35,11 @@
     <!-- Main Style -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+    {% block css %}
+    
+    {% endblock css %}
 
-    <!--[if IE]>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
+   
 </head>
 
 <body>

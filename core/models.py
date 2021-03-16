@@ -18,7 +18,7 @@ class Messages(models.Model):
 
 class Products(models.Model):
     Name = models.CharField(max_length=128)
-    Description = models.TextField(max_length=512)
+    Description = models.TextField(max_length=1200)
     Image = models.ImageField(upload_to='static/prods/')
 
     def __str__(self):
@@ -30,3 +30,15 @@ class Products(models.Model):
     class Meta:
         verbose_name = "2 - Product"
         verbose_name_plural = "2 - Products"
+
+
+class Quote(models.Model):
+    Name = models.CharField(max_length=128)
+    Email = models.EmailField()
+    Phone = PhoneNumberField()
+    Product = models.CharField(max_length=128)
+    Quantity = models.PositiveIntegerField()
+    Description = models.TextField(max_length=5000)
+
+    def __str__(self):
+        return self.Name

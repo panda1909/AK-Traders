@@ -1,0 +1,51 @@
+{% extends 'base.html' %} 
+{% load static %} 
+
+
+{% block content %}
+
+<header id="page-top" class="blog-banner">
+  <!-- Start: Header Content -->
+  <div class="container" id="blog">
+    <div class="row blog-header text-center wow fadeInUp" data-wow-delay="0.5s">
+      <div class="col-sm-12">
+        <!-- Headline Goes Here -->
+        <h4><a href="index.html"> Home </a> / Product Detail</h4>
+        <h3>Product Detail</h3>
+      </div>
+    </div>
+    <!-- End: .row -->
+  </div>
+</header>
+
+<div class="blog_container single_blog_page">
+  <div class="container">
+    <div class="row">
+      <!-- Blog Area -->
+      <div class="col-sm-8 col-xs-12 blog-area">
+        <div class="blog-warp-1 blog_warp_lay_1">
+          <div class="blog_imgg">
+            <img src="{% static 'images/blog_2.jpg' %}" alt="" />
+          </div>
+          <div class="blog_content_warp">
+            <h4>Product Name</h4>
+            <p>
+              Description Here Lorem Ipsum is simply dummy text ofthe anadthe
+              printing of typesetting industrydummy texat the dummy text ofthe
+              anadthe printing dummy text ofthe anadthe printing of dummy text
+              ofthe anadthe printing of dummy text ofthe anadthe printing of
+              typesetting industrydummy texat
+            </p>
+            
+          </div>
+          <div class="header_button text-left">
+            <a href="{% url 'quote' %}">Get a quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock content %}

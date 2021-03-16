@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<header id="page-top" class="blog-banner">
+        <!-- Start: Header Content -->
+        <div class="container" id="blog">
+            <div class="row blog-header text-center wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-sm-12">
+                    <!-- Headline Goes Here -->
+                    <h4><a href="index.html"> Home </a> / Procuts </h4>
+                    <h3>Our Products</h3>
+                </div>
+            </div>
+            <!-- End: .row -->
+        </div>
+        <!-- End: Header Content -->
+    </header>
+ <section class="service_section" id="agenda">
+        <div class="container">
+            <!-- Start: Heading -->
+            <div class="base-header">
+                <h3> Our Products</h3>
+            </div>
+            <!-- End:  heading -->
+            <div class="row" id="service">
+                {% for obj in obj %}
+                <div class="service_list">
+                    <div class="service_img">
+                        <img alt="team" class="img-responsive" src="{{ obj.Image }}">
+                    </div>
+                    <div class="service_para">
+                        <a href="#"><i class="icon_easel"></i><h5>{{obj.Name}}</h5></a>
+                        <br>
+                        <a class="srvic_read" href="#">Learn More <span class="fa fa-angle-double-right"></span></a>
+                    </div>
+                </div>
+                {% endfor %}
+                <!-- End : Tab pane 1 -->
+            </div>
+            <!---/.row -->
+        </div>
+        <!--/.container -->
+    </section>
+
+
+        
+{% endblock content %}
+
+

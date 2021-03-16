@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+ <!-- header -->
+    <header id="page-top" class="blog-banner">
+        <!-- Start: Header Content -->
+        <div class="container" id="blog">
+            <div class="row blog-header text-center wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-sm-12">
+                    <!-- Headline Goes Here -->
+                    <h4><a href="index.html"> Home </a> / Get a quote </h4>
+                    <h3>Get a quote</h3>
+                </div>
+            </div>
+            <!-- End: .row -->
+        </div>
+        <!-- End: Header Content -->
+    </header>
+    <!--/. header -->
+
+    <!-- End: Header Section
+==================================================-->
+
+
+    <!--   Start: Contact Section  
+==================================================-->
+    <section class="contact-section contact_page">
+        <div class="container">
+            <!-- Start: Heading -->
+            <div class="base-header">
+                <h3>Get a quote</h3>
+            </div>
+            <!-- End:  heading -->
+            <div class="row">
+                <!-- Start:  Content  -->
+                <div class="inner-contact">
+                    <div class="row contact_info">
+                        <div class="bottom_contact col-sm-4 col-xs-12"><i class="icon_pin_alt"></i>
+                            <p>company name </p>
+                            <h4>California, USA</h4>
+                        </div>
+                        <div class="bottom_contact col-sm-4 col-xs-12"><i class="icon_phone"></i>
+                            <p>Toll Free Number</p>
+                            <h4>0 (245) 378-6748</h4>
+                        </div>
+                        <div class="bottom_contact col-sm-4 col-xs-12"><i class="icon_clock_alt"></i>
+                            <p>Opening Hours</p>
+                            <h4>Mon - Fri 9am - 6 pm</h4>
+                        </div>
+                    </div>
+                    <!-- End:contact-info  -->
+                    <div class="row">
+                        <!--  Contact Form  -->
+                        <div class="contact-form">
+                            <form action="#" id="contactForm" method="post" name="contactForm">
+                                <div class="col-sm-6">
+                                    <div class="form-group col-sm-12">
+                                        <input class="form-control" id="Name" name="Name" placeholder="Name :" type="text">
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <input class="form-control" id="Email" name="Email" placeholder="Email :" type="text">
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <input class="form-control" id="Tel" name="Tel" placeholder="Phone :" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group col-sm-12">
+                                        <input class="form-control" id="prod-name" name="prod-name" placeholder="Product Name :" type="text">
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <input class="form-control" id="quantity" name="quantity" placeholder="Quantity :" type="numbers">
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <textarea class="form-control" id="Message" name="Message" placeholder="Any Description :"></textarea>
+                                </div>
+                                <input class="submit-button btn btn-chos" name="submit" value="Submit" type="submit">
+                            </form>
+                        </div>
+                        <!-- End:Contact Form  -->
+                    </div>
+                      
+                </div>
+                <!-- End: inner-contact-->
+            </div>
+            <!-- End: row-->
+        </div>
+        <!-- End: container-->
+    </section>
+
+{% endblock content %}
+
+
+

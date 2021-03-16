@@ -19,9 +19,19 @@ def home(request):
     }
     return render(request, 'core/index.html', context)
 
-def product(request, pk):
-    obj = Products.objects.filter(id=pk)
-    context ={
-        'obj': obj[0]
+def list_product (request):
+    obj = Products.objects.all()
+
+    context = {
+        'obj': obj,
     }
-    return render(request, 'core/product_detail.html', context)
+    return render(request, 'core/products.html', context)
+
+
+def product(request):
+    
+    return render(request, 'core/detail-product.html')
+
+
+def getquote(request):
+    return render(request, 'core/get-quote.html')
