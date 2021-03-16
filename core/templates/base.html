@@ -14,7 +14,7 @@
    
 
     <!-- Favicons -->
-    <link rel="icon" type="image/png" href="{% static 'images/favicon.ico' %}">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.ico'%}">
 
     <!-- CSS Begins
 ================================================== -->
@@ -80,7 +80,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="header_logo">
-                        <a href="index.html"><img src="{% static 'images/AK.png' %}" alt="">
+                        <a href="{% url 'home' %}"><img src="{% static 'images/AK.png' %}" alt="">
                     </a>
                     </div>
                     {% block navbar %}

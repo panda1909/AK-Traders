@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
@@ -74,8 +75,14 @@ WSGI_APPLICATION = 'AK_Traders.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd4atv1utp2d28t', 
+        'USER': 'xaxixqujiveuec', 
+        'PASSWORD': '176f08f0cd1886b9c26e5583487fa007647b78e6c39c190231aa5d65228f1da3',
+        'HOST': 'ec2-54-205-183-19.compute-1.amazonaws.com', 
+        'PORT': '5432',
     }
 }
 
@@ -120,3 +127,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+django_heroku.settings(locals())
