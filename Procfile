@@ -1,0 +1,1 @@
+web: gunicorn AK_Trader.wsgi
