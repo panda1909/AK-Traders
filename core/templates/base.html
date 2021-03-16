@@ -59,29 +59,14 @@
                             <li>
                                 <i class="icon_phone"></i> 247 3567845</li>
                             <li>
-                                <i class="icon_mail_alt"></i>uemail@gmail.com</li>
+                                <i class="icon_mail_alt"></i>support@aktraders.com</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-5 col-xs-12">
-                    <div class="header_social">
-                        <a href="#">
-									<i class="fa fa-facebook-f"></i>
-								</a>
-                        <a href="#">
-									<i class="fa fa-twitter"></i>
-								</a>
-                        <a href="#">
-									<i class="fa fa-google-plus"></i>
-								</a>
-                        <a href="#">
-									<i class="fa fa-instagram"></i>
-								</a>
-                    </div>
-                </div>
+                
                 <div class="col-sm-2 col-xs-12">
                     <div class="header_button text-right">
-                        <a href="#">get a quote</a>
+                        <a href="{% url 'quote' %}">get a quote</a>
                     </div>
                 </div>
             </div>
@@ -100,53 +85,13 @@
                     </div>
                     <div id="navigation">
                         <ul>
-							<li class="active has-sub"><a href="index.html" title="Home">Home</a>
-                                <ul>
-                                    <li><a href="index-two.html" title="Home">Home Two</a>
-                                    </li>
-                                    <li><a href="index-portfolio.html" title="Home">Home Portfolio</a>
-                                    </li>
-                                    <li><a href="index-onepage.html" title="Home">Onepage</a>
-                                    </li>
-                                    <li><a href="index-two-onepage.html" title="Home">Onepage Two</a>
-                                    </li>
-                                </ul>
+							<li class="active has-sub"><a href="{% url 'home' %}" title="Home">Home</a>
                             </li>
-                            <li><a href="about.html">About</a>
+                            <li><a href="#">About Us</a>
                             </li>
-                            <li class="has-sub"><a href="#" title="page">Pages</a>
-                                <ul>
-                                    <li><a href="blog.html" title="Blog">Blog Page</a>
-                                        <ul>
-                                            <li><a href="blog.html" title="blog">Blog Page</a>
-                                            </li>
-                                            <li><a href="single-blog.html" title="Single">Single blog</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="gallery.html" title="Gallery">Gallery</a>
-                                    </li>
-                                    <li><a href="single-gallery.html" title="Gallery">Single Gallery</a>
-                                    </li>
-                                    <li><a href="services.html" title="Services">Services</a>
-                                    </li>
-                                    <li><a href="single-services.html" title="Services">single Services</a>
-                                    </li>
-                                    <li><a href="about.html" title="About">About Page</a>
-                                    </li>
-                                </ul>
+                            <li><a href="{% url 'products' %}" title="Our Products">Our Products</a>
                             </li>
-                            <li class="has-sub"><a href="blog.html" title="blog">Blog</a>
-                                <ul>
-                                    <li><a href="blog.html" title="blog">Blog Page</a>
-                                    </li>
-                                    <li><a href="single-blog.html" title="Single">Single blog</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="gallery.html" title="Gallery">Gallery</a>
-                            </li>
-                            <li><a href="contact.html" title="Contact">Contact</a>
+                            <li><a href="#" title="Contact">Contact Us</a>
                             </li>
                         </ul>
                     </div>
