@@ -75,8 +75,14 @@ WSGI_APPLICATION = 'AK_Traders.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd4atv1utp2d28t', 
+        'USER': 'xaxixqujiveuec', 
+        'PASSWORD': '176f08f0cd1886b9c26e5583487fa007647b78e6c39c190231aa5d65228f1da3',
+        'HOST': 'ec2-54-205-183-19.compute-1.amazonaws.com', 
+        'PORT': '5432',
     }
 }
 
