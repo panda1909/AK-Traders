@@ -5,5 +5,5 @@ urlpatterns = [
     path('', home, name='home'),
     path('products', list_product, name='products'),
     path('quote', getquote, name='quote'),
-    path('detail-product', product, name='detail-product'),
+    path('detail-product/<int:pk>/', product, name='detail-product'),
 ]

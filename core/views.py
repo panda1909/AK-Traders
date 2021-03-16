@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Messages, Products
+from .models import Messages, Products, Quote
 
 # Create your views here.
 def home(request):
@@ -25,13 +25,29 @@ def list_product (request):
     context = {
         'obj': obj,
     }
+
     return render(request, 'core/products.html', context)
 
 
-def product(request):
+def product(request, pk):
+    obj = Products.objects.filter(id=pk)
+    context ={
+        'obj': obj[0]
+    }
     
-    return render(request, 'core/detail-product.html')
+    return render(request, 'core/detail-product.html', context)
 
 
 def getquote(request):
+    if request.method == 'POST':
+        var = request.POST
+        name = var['name']
+        email = var['email']
+        phone = var['phone']
+        product = var['product']
+        quantity = var['quantity']
+        des = var['message']
+
+        quote = Quote.objects.create(Name=name,Email=email,Phone=phone,Product=product,Quantity=quantity,Description=des)
+
     return render(request, 'core/get-quote.html')
