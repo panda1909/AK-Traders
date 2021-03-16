@@ -1,6 +1,20 @@
 {% extends 'base.html' %} 
 {% load static %} 
 
+{% block navbar %}
+
+<div id="navigation">
+  <ul>
+    <li><a href="{% url 'home' %}" title="Home">Home</a></li>
+    <li><a href="{% url 'home' %}#about">About Us</a></li>
+    <li><a href="{% url 'home' %}#agenda">Our Services</a></li>
+    <li>
+      <a href="{% url 'products' %}" title="Our Products">Our Products</a>
+    </li>
+    <li><a href="{% url 'home' %}#contact" title="Contact">Contact Us</a></li>
+  </ul>
+</div>
+{% endblock navbar %}
 
 {% block content %}
 

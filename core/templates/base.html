@@ -83,11 +83,12 @@
                         <a href="index.html"><img src="{% static 'images/AK.png' %}" alt="">
                     </a>
                     </div>
+                    {% block navbar %}
                     <div id="navigation">
                         <ul>
 							<li><a href="{% url 'home' %}" title="Home">Home</a>
                             </li>
-                            <li><a href="#">About Us</a>
+                            <li><a href="#about">About Us</a>
                             </li>
                             <li><a href="#agenda">Our Services</a>
                             </li>
@@ -97,6 +98,7 @@
                             </li>
                         </ul>
                     </div>
+                    {% endblock navbar %}
                 </div>
             </div>
             <!--/ row -->
