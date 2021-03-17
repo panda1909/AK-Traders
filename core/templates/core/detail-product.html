@@ -43,14 +43,13 @@
           </div>
           <div class="blog_content_warp">
             <h4>{{ obj.Name }}</h4>
+                <a href="{% url 'quote' %}" class="more-link">Get a Quote</a>
             <p>
               {{ obj.Description }}
             </p>
             
           </div>
-          <div class="header_button text-left">
-            <a href="{% url 'quote' %}">Get a quote</a>
-          </div>
+          
         </div>
       </div>
     </div>
